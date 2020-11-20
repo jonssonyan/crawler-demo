@@ -47,29 +47,11 @@ folder = os.path.exists(images_path)
 if not folder:
     os.makedirs(images_path)
 num = args.num
-num_1 = 1
-num_2 = 2
-# 文章数量最大为3600
-if num > 3600:
-    num = 3600
-else:
-    min = 3600
-    for a in range(1, 21):
-        for b in range(2, 11):
-            min_ = abs(a * (b - 1) * 20 - num)
-            if min_ == 0:
-                num_1 = a
-                num_2 = b
-                break
-            if min_ < min:
-                min = min_
-                num_1 = a
-                num_2 = b
-        else:
-            continue
-        break
-for i in range(0, num_1):
-    for j in range(1, num_2):
+# 文章数量最大为3200
+if num > 3200:
+    num = 3200
+for i in range(0, 20):
+    for j in range(1, 10):
         url = "https://weixin.sogou.com/pcindex/pc/pc_%d/%d.html" % (i, j)
         # 请求搜狗文章的url地址
         try:
@@ -106,8 +88,16 @@ for i in range(0, num_1):
                         print('正在下载第%d篇文章图片' % count)
                         f.write(images)
                         all.append(article)
+                        if count == num:
+                            break
                 except Exception as e:
                     print('下载文章图片失败：%s' % e)
+        else:
+            continue
+        break
+    else:
+        continue
+    break
 # 信息存储在excel中
 if len(all) > 0:
     # 创建一个workbookx
