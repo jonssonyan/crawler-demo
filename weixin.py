@@ -140,4 +140,4 @@ if len(all) > 0:
             print('生成txt成功')
     except Exception as e:
         print('生成txt失败：%s' % e)
-print('共爬取%d篇文章' % a)
+print('共爬取%d篇文章' % count)

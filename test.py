@@ -1,6 +1,6 @@
 num_1 = 1
 num_2 = 2
-num = 316
+num = 129
 min = 3600
 for a in range(1, 21):
     for b in range(2, 11):
