@@ -90,9 +90,6 @@ for i in range(0, num_1):
             article = {}
             # 作者存在
             if author_:
-                article['title'] = title
-                article['id'] = '%d.jpg' % count
-                article['author'] = author_
                 # 图片路径
                 path = 'http:' + content.xpath('./div[@class="img-box"]//img/@src')[0]
                 # 下载文章图片
@@ -102,6 +99,9 @@ for i in range(0, num_1):
                     print("请求异常：%s", e)
                     break
                 try:
+                    article['title'] = title
+                    article['id'] = '%d.jpg' % count
+                    article['author'] = author_
                     with open('%s/%d.jpg' % (images_path, count), "wb") as f:
                         print('正在下载第%d篇文章图片' % count)
                         f.write(images)
