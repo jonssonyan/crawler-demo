@@ -95,7 +95,6 @@ for i in range(0, 20):
         else:
             continue
         break
-
 # 信息存储在excel中
 if len(all) > 0:
     # 创建一个workbookx
