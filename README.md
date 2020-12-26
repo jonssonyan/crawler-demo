@@ -8,5 +8,5 @@
 2. -num 文章的个数，默认为20篇
 
 # 开发工具
-python 3.7.9
-pycharm 2019.3.5
+1. python 3.7.9
+2. pycharm 2019.3.5
