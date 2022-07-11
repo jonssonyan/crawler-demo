@@ -1,3 +1,5 @@
+# !/usr/bin/python
+# -*- coding: UTF-8 -*-
 num_1 = 1
 num_2 = 2
 num = 276
