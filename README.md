@@ -1,13 +1,8 @@
-# crawler demo
+# Crawler Demo
 
-基于Python3的爬虫案例
+Python3爬虫实战
 
-# 开发工具
-
-1. python 3.7.9
-2. pycharm 2019.3.5
-
-# 案例
+# 目录
 
 1. [爬取微信文章](./weixin)
 2. [爬取京东生鲜商品评论](./jd)
