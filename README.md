@@ -1,6 +1,6 @@
 # Crawler Demo
 
-Python3爬虫案例
+Python爬虫案例
 
 # 目录
 
