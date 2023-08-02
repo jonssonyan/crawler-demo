@@ -2,6 +2,10 @@
 
 Python爬虫案例
 
+# Author
+
+[jonssonyan](https://jonssonyan.com)
+
 # 目录
 
 1. [爬取微信文章](./weixin)
