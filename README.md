@@ -2,7 +2,7 @@
 
 Python爬虫案例
 
-# Author
+# 作者
 
 [jonssonyan](https://jonssonyan.com)
 
